@@ -1,18 +1,40 @@
 import { StyleSheet } from 'react-native'
-import { Metrics, ApplicationStyles } from '../../Themes/'
+import { Metrics, ApplicationStyles, Colors } from '../../Themes/'
 
 export default StyleSheet.create({
   ...ApplicationStyles.screen,
+  header: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: Colors.primary,
+    height: 50,
+  },
+  title: {
+    fontSize: 35,
+    color: Colors.white
+  },
   container: {
-    paddingBottom: Metrics.baseMargin
+    padding: Metrics.baseMargin,
   },
-  logo: {
-    marginTop: Metrics.doubleSection,
-    height: Metrics.images.logo,
-    width: Metrics.images.logo,
-    resizeMode: 'contain'
+  searchContainer: {
+    flex: 1,
+    flexDirection: 'row',
   },
-  centered: {
-    alignItems: 'center'
+  textInput: {
+    flex:9,
+    margin: 5,
+    height: 30,
+    padding: 5,
+    backgroundColor: Colors.white,
+    borderColor: Colors.primary,
+    borderWidth: 1
+  },
+  filterButton: {
+    flex:1,
+    margin: 5
+  },
+  listContainer: {
+    marginTop: 50,
+    padding: 5
   }
 })

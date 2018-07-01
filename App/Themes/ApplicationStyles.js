@@ -7,9 +7,20 @@ import Colors from './Colors'
 
 const ApplicationStyles = {
   screen: {
-    mainContainer: {
-      flex: 1,
-      backgroundColor: Colors.transparent
+    // mainContainer: {
+    //   flex: 1,
+    //   backgroundColor: Colors.white
+    // },
+    loader: {
+      position: 'absolute',
+      left: 0,
+      right: 0,
+      top: 0,
+      bottom: 0,
+      alignItems: 'center',
+      justifyContent: 'center',
+      width: Metrics.screenWidth,
+      height: Metrics.screenHeight
     },
     backgroundImage: {
       position: 'absolute',
@@ -18,11 +29,11 @@ const ApplicationStyles = {
       bottom: 0,
       right: 0
     },
-    container: {
-      flex: 1,
-      paddingTop: Metrics.baseMargin,
-      backgroundColor: Colors.transparent
-    },
+    // container: {
+    //   flex: 1,
+    //   paddingTop: Metrics.baseMargin,
+    //   backgroundColor: Colors.white
+    // },
     section: {
       margin: Metrics.section,
       padding: Metrics.baseMargin
