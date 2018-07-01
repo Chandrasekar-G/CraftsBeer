@@ -22,6 +22,14 @@
     * Run Genymotion
     * run `react-native run-android`
 
+## :common errors
+
+error: bundling failed: Error: While resolving module `react-native-vector-icons/FontAwesome`, the Haste package `react-native-vector-icons` was found. However the module `FontAwesome` could not be found within the package. Indeed, none of these files exist:
+
+1. react-native link
+2. rm ./node_modules/react-native/local-cli/core/__fixtures__/files/package.json
+
+
 ## :no_entry_sign: Standard Compliant
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
